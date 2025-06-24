@@ -10,7 +10,7 @@
 // 10. Check is (firstFavNumb is not equal to secondFavNumb) using loose non-equality operator.
 
 let firstFavNumb = 12;
-let secondFavNumb = 7;
+let secondFavNumb = 12;
 
 console.log(firstFavNumb > secondFavNumb);
 console.log(firstFavNumb < secondFavNumb);
