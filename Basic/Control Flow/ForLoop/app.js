@@ -10,6 +10,6 @@ for (index = 0; index < 5; index++) {
 }
 
 // Print your name & numbers from 0 through 1000
-for (index = 0; index <= 1000; index++) {
+for (index = 0; index <= 10; index++) {
     console.log("I love you " + index);
 }
