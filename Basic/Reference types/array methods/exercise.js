@@ -41,3 +41,10 @@ months.splice(1, 0, "Feb");
 console.log(months);
 months.splice(4,1,"May")
 console.log(months);
+
+let vehicles = ["van", "bike", "car", "truck"];
+console.log(vehicles.join('.'));
+console.log(vehicles.reverse());
+
+let number = [12,21,32,14,5];
+console.log(number.sort());
