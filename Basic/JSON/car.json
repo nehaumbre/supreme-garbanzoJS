@@ -1,0 +1,18 @@
+{
+    "make": "Ford",
+    "model": "Explorer",
+    "year": 2021,
+    "color": "Black",
+    "isElectric": false,
+    "engine": {
+      "type": "V6",
+      "horsepower": 290,
+      "fuelType": "Gasoline"
+    },
+    "features": ["All-Wheel Drive", "Navigation System", "Third-Row Seating"],
+    "owner": {
+      "name": "Robert Johnson",
+      "licenseNumber": "F1234567"
+    }
+  }
+  
