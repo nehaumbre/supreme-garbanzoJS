@@ -26,18 +26,45 @@ console.log("Minutes:", minutes);
 console.log("Seconds:", seconds);
 console.log("Milliseconds:", milliseconds);
 console.log("Timezone Offset (minutes from UTC):", timeZoneOffset);
-console.log("Convert date format to toDateString: ",date.toDateString());
-console.log("Convert date format to toLocaleDateString: ", date.toLocaleDateString());
+console.log("Convert date format to toDateString: ", date.toDateString());
+console.log(
+  "Convert date format to toLocaleDateString: ",
+  date.toLocaleDateString()
+);
 console.log("Convert date format to toTimeString: ", date.toTimeString());
-console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeString());
-
+console.log(
+  "Convert date format to toLocaleTimeString: ",
+  date.toLocaleTimeString()
+);
 
 //setInterval()
 // setInterval(() => {
-//     console.log("The function runs every 2 seconds")    
+//     console.log("The function runs every 2 seconds")
 // }, 2000);
 
 // setTimeout
 setTimeout(() => {
-    console.log("this function runs after the set timeout or delay");
+  console.log("this function runs after the set timeout or delay");
 }, 3000);
+
+// //stop the interval after 10 seconds
+// const intervalId = setInterval(() => {
+//   console.log("This executes at interval of 10 seconds or so");
+// },10000);
+
+// console.log(intervalId);
+// setTimeout(() => {
+//   clearInterval(intervalId);
+//   console.log("Interval stopped");
+// }, 10000);
+
+const intervalId = setInterval(() => {
+  console.log("This executes at interval of 10 seconds or so");
+}, 1000); // Run every 10 seconds
+
+console.log("Interval ID:", intervalId);
+
+setTimeout(() => {
+  clearInterval(intervalId);
+  console.log("Interval stopped");
+}, 10000); // Stop after 10 seconds
