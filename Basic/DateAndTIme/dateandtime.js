@@ -30,3 +30,14 @@ console.log("Convert date format to toDateString: ",date.toDateString());
 console.log("Convert date format to toLocaleDateString: ", date.toLocaleDateString());
 console.log("Convert date format to toTimeString: ", date.toTimeString());
 console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeString());
+
+
+//setInterval()
+// setInterval(() => {
+//     console.log("The function runs every 2 seconds")    
+// }, 2000);
+
+// setTimeout
+setTimeout(() => {
+    console.log("this function runs after the set timeout or delay");
+}, 3000);
