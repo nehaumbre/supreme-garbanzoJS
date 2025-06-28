@@ -27,3 +27,6 @@ console.log("Seconds:", seconds);
 console.log("Milliseconds:", milliseconds);
 console.log("Timezone Offset (minutes from UTC):", timeZoneOffset);
 console.log("Convert date format to toDateString: ",date.toDateString());
+console.log("Convert date format to toLocaleDateString: ", date.toLocaleDateString());
+console.log("Convert date format to toTimeString: ", date.toTimeString());
+console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeString());
