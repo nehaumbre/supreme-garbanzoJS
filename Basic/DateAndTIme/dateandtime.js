@@ -32,7 +32,7 @@ console.log(
   date.toLocaleDateString()
 );
 console.log("Convert date format to toTimeString: ", date.toTimeString());
-<<<<<<< HEAD
+
 console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeString());
 
 
@@ -41,7 +41,6 @@ console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeStri
 // date.setDate(date.getdate + 1);
 date.setDate(date.getDate() - 1);
 console.log("previous day date ",date);
-=======
 console.log(
   "Convert date format to toLocaleTimeString: ",
   date.toLocaleTimeString()
@@ -57,7 +56,7 @@ setTimeout(() => {
   console.log("this function runs after the set timeout or delay");
 }, 3000);
 
-// //stop the interval after 10 seconds
+//stop the interval after 10 seconds
 // const intervalId = setInterval(() => {
 //   console.log("This executes at interval of 10 seconds or so");
 // },10000);
@@ -78,4 +77,3 @@ setTimeout(() => {
   clearInterval(intervalId);
   console.log("Interval stopped");
 }, 10000); // Stop after 10 seconds
->>>>>>> 2620abb9a6c90e85c6f74a23e4bba36f7423b0ae
