@@ -30,3 +30,10 @@ console.log("Convert date format to toDateString: ",date.toDateString());
 console.log("Convert date format to toLocaleDateString: ", date.toLocaleDateString());
 console.log("Convert date format to toTimeString: ", date.toTimeString());
 console.log("Convert date format to toLocaleTimeString: ", date.toLocaleTimeString());
+
+
+// we can set the dates too
+
+// date.setDate(date.getdate + 1);
+date.setDate(date.getDate() - 1);
+console.log("previous day date ",date);
