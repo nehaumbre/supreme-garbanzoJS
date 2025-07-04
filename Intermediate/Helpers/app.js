@@ -229,3 +229,28 @@ let things = [
   { name: "Learn PHP", category: "Books" },
 ];
 console.log(things.find((thing)=> thing.category === "Books"))
+
+// -------------------------------
+// The "reducer" method executes a reducer function for array element.
+// The "reducer" method returns a single value: the function's accumulated result.
+// The "reducer" method does not execute the function for empty array elements.
+// The "reducer" method does not change the original array.
+let n = [1, 2, 3, 4, 5];
+let f = numbers.reduce((total,current) => total + current, 0);
+// // 0 = initial value for total, total = (holds the running total)
+// //current = current number in the array
+console.log(f);
+const people = [
+    {
+      name: "HuXn WebDev",
+      age: 18,
+    },
+    {
+      name: "Alex Mead",
+      age: 29,
+    },
+    {
+      name: "Brain Griffin",
+      age: 40,
+    },
+  ];
