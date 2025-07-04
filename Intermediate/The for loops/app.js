@@ -81,3 +81,4 @@ const array1 = ["a", "b", "c"];
 for (let chars of array1) {
   console.log(chars);
 }
+
