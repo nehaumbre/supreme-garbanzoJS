@@ -10,7 +10,8 @@ var headings = document.getElementsByTagName("h4");
 for (let i = 0; i < headings.length; i++) {
   headings[i].style.backgroundColor = "teal";
 }
-document.getElementsByTagName("div[0]");
+var a = document.getElementsByTagName("div");
+console.log(a[0].innerText = 'GREEEN');
 document.getElementById("blue").innerText = "BLUE";
 
 document.querySelector(".yellow").innerText = "YELLOW";
