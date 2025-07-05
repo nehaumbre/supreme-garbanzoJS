@@ -11,10 +11,12 @@ for (let i = 0; i < headings.length; i++) {
   headings[i].style.backgroundColor = "teal";
 }
 var a = document.getElementsByTagName("div");
-console.log(a[0].innerText = 'GREEEN');
+var b = document.getElementById('yellow');
+console.log("--------",b);
+console.log((a[0].innerText = "GREEEN"));
 document.getElementById("blue").innerText = "BLUE";
+document.getElementsByClassName("green");
 
-document.querySelector(".yellow").innerText = "YELLOW";
-let tealDivs = document.querySelectorAll(".teal")
-tealDivs.forEach((div) => div.style.backgroundColor = "red")
-
+document.querySelector("#yellow").innerText = "YELLOW";
+let tealDivs = document.querySelectorAll(".teal");
+tealDivs.forEach((div) => (div.style.backgroundColor = "red"));
