@@ -240,7 +240,8 @@ let f = numbers.reduce((total,current) => total + current, 0);
 // // 0 = initial value for total, total = (holds the running total)
 // //current = current number in the array
 console.log(f);
-const people = [
+
+const peopless = [
     {
       name: "HuXn WebDev",
       age: 18,
@@ -254,3 +255,41 @@ const people = [
       age: 40,
     },
   ];
+
+  const oldestAge = peopless.reduce((previous, current) => (current.age > previous ? current.age : previous) ,0);
+  console.log(oldestAge);
+
+
+  const wordss = [
+      "apple",
+      "banana",
+      "orange",
+      "banana",
+      "apple",
+      "orange",
+      "apple",
+      "grape",
+    ];
+
+const wordFrequency = wordss.reduce((frequencyMap, word) => {
+  frequencyMap[word] = (frequencyMap[word] || 0) + 1;
+  return frequencyMap;
+}, {});
+
+console.log(wordFrequency);
+
+// -------------------------------------
+// Write a function called calculateProduct that takes an array of numbers as an argument and returns the product of all the numbers in the array.
+
+// Write the calculateProduct function using the reduce() method to achieve this task.
+
+// Something like this 👇
+// const numbers = [2, 3, 4, 5];
+
+// const product = calculateProduct(numbers);
+// console.log(product); // 120
+// -------------------------------------
+
+const nums = [2, 3, 4, 5];
+let product = nums.reduce((oldValue, newValue) => oldValue*newValue,1);
+console.log(`product of given array of number ${nums} is : ${product}`);
