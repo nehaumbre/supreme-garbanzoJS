@@ -64,13 +64,13 @@ console.log(map.has(key2)); //true
 for (let [key, val] of map) {
   console.log(key, val);
 }
-console.log("================")
-for (let keys of map.keys()){
-    console.log(keys);
+console.log("================");
+for (let keys of map.keys()) {
+  console.log(keys);
 }
-console.log("================")
-for (let values of map.values()){
-    console.log(values);
+console.log("================");
+for (let values of map.values()) {
+  console.log(values);
 }
 // -------------------------------------------------------
 map.clear(); //clears the map
@@ -85,11 +85,11 @@ console.log(map);
 
 const keyOne = "a";
 const keyTwo = "b";
-const keyThree ="c";
+const keyThree = "c";
 
 map.set(keyOne, 1);
 map.set(keyTwo, 2);
-map.set(keyThree, 3)
+map.set(keyThree, 3);
 
 console.clear();
 console.log(map);
@@ -98,3 +98,32 @@ console.log(map.size);
 map.delete(keyTwo);
 console.log(map);
 console.log(map.size);
+
+// Write a function called countCharacters that takes a string as input and returns a Map that contains each character in the string as a key and the count of occurrences of that character as the value.
+
+// Something like this 👇
+// const text = "hello";
+
+// const characterCountMap = countCharacters(text);
+// console.log(characterCountMap);
+
+// output
+// Map(4) {
+//     'h' => 1,
+//     'e' => 1,
+//     'l' => 2,
+//     'o' => 1
+//   }
+//check/study this code later 
+function countCharacters(str) {
+  const characterCountMap = new Map();
+  for (let char of str) {
+    const count = characterCountMap.get(char) || 0;
+    characterCountMap.set(char, count + 1);
+  }
+
+  return characterCountMap;
+}
+
+let countResult = countCharacters("hello");
+console.log(countResult);
