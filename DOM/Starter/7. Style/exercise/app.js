@@ -9,3 +9,11 @@ const btn = document.querySelector(".btn");
 // 4. Change the fontFamily of paragraph to "sans-serif"
 // 5. Change the color of paragraph to "white"
 // 6. Change the color of btn to pink
+
+container.style.height = "400px";
+container.style.backgroundColor = "teal";
+h1.style.color = "skyblue";
+p.style.fontFamily = "sans-serif";
+p.style.color = "white";
+
+btn.style.color = 'pink'
