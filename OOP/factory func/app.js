@@ -188,3 +188,54 @@ console.log(car1.stop());
 
 console.log(car2.start());
 console.log(car2.stop());
+
+// *Built-in constructors, also known as native constructors,
+//  *are standard constructors provided by JavaScript that allow you 
+// *to create objects of various data types. 
+// *These constructors are available globally and do not need to be explicitly defined. 
+// *They provide a convenient way to create instances of primitive data types and built-in objects.
+
+// --> Number Constructor:
+
+const num1 = new Number(90);
+console.log(num1);
+console.log(typeof num1);
+
+// --> String Constructor:
+const str = new String("BOOM");
+console.log(str);
+console.log(typeof str);
+
+
+// --> Boolean Constructor:
+let bool1 = new Boolean();
+console.log(bool1);
+console.log(typeof bool1);
+
+// --> Array Constructor:
+const arr = new Array(1, 2, 3)
+console.log(arr);
+console.log(typeof arr);
+
+// &The Object.create() method creates a new object, 
+// &using an existing object as the prototype of the newly 
+// &created object.
+
+
+let per = {
+    greet: function () {
+        console.log(`hello im ${this.firstNam} ${this.LastNam}`);
+    }
+}
+
+let neha = Object.create(per);
+neha.firstNam = "Neha";
+neha.LastNam = "Umbre";
+neha.greet();
+
+let camila = Object.create(per, {
+    firstNam: { value: "camila" },
+    LastNam: { value: "Doe" }
+})
+
+camila.greet();
