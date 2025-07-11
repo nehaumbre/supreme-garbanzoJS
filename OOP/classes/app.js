@@ -35,6 +35,12 @@ console.log(camila);
 console.log(camila.greet());
 
 //Challenge
+// 1. Create a class name "Hero", properties (name, level)
+// 2. Create greet method which will just greet
+// 3. Create Instance of "hero" class
+// 4. Create New class name "Mega", inherit properties from "hero" class & provide property of spell
+// 5. Create instance of "Mega" class
+
 
 // class Hero {
 //   constructor(name, level) {
