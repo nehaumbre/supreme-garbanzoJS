@@ -51,3 +51,6 @@ console.log(myObject.publicMethod()); //Public Field: Public Data
 // console.log(myObject._protectedMethod()); //Error: myObject._protectedMethod is not a function
 console.log(myObject.accessProtectedMethod());
 console.log(myObject.accessPrivateMethod());
+
+
+console.clear();
