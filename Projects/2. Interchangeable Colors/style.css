@@ -1,0 +1,50 @@
+* {
+    margin: .3rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(28, 28, 35);
+  }
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    text-transform: capitalize;
+    width: 200px; height:200px;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.teal{
+    background-color: teal;
+}
+
+.indigo{
+    background-color: indigo;
+}
