@@ -22,8 +22,13 @@ body {
     border-radius: 20%;
     cursor: pointer;
     font-size: 20px;
+    border: white 6px solid;
+    transition: transform 0.2s ease;
 }
 
+.clicked {
+    transform: scale(0.9);
+}
 
 .red{
     background-color: red;
