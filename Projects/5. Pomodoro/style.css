@@ -1,0 +1,48 @@
+body {
+    background: #ffe9ec;
+    font-family: 'Comic Sans MS', 'Poppins', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cute-pomodoro {
+    background: #fff6a3;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 12px 25px rgba(255,105,135,0.3);
+    text-align: center;
+    border: 3px dashed #ffb6c1;
+}
+
+.cute-pomodoro h1 {
+    color: #f61a3b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.cute-timer {
+    font-size: 70px;
+    color: #ff275d;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.cute-buttons button {
+    background: #f61a3b;
+    color: #fff6a3;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 8px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: background 0.3s , transform 0.2s;
+}
+
+.cute-buttons button:hover {
+    background: #ff275d;
+    transform: scale(1.05);
+}
