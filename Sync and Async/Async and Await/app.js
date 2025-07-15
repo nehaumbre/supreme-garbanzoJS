@@ -46,16 +46,16 @@ function loginUser(username, password) {
   });
 }
 
-console.log("start");
+// console.log("start");
 //Using the promise
 
-loginUser("admin", "14234")
-  .then((message) => {
-    console.log(message); // Output after 1.5s: Login successful!
-  })
-  .catch((error) => {
-    console.log(error); // Output after 1.5s: Invalid Credentials!
-  });
+// loginUser("admin", "14234")
+//   .then((message) => {
+//     console.log(message); // Output after 1.5s: Login successful!
+//   })
+//   .catch((error) => {
+//     console.log(error); // Output after 1.5s: Invalid Credentials!
+//   });
 
 // loginUser returns a Promise.
 
@@ -67,12 +67,31 @@ loginUser("admin", "14234")
 
 // The caller handles the result using .then() and .catch().
 
-console.log("end");
+// console.log("end");
 //?OUTPUT:
 // Start
 // End
 // Then: Login successful!  // appears 1.5 seconds later
 //?Notice how "End" prints before the login finishes? That’s asynchronous behavior.
 
-
 //*Let’s rewrite the same login example using async/await.
+
+// Async function to use await
+async function loginFlow() {
+  console.log("START");
+  try {
+    const result = await loginUser("admin", "1234");
+    console.log("Result:", result);
+  } catch (error) {
+    console.log("Error:", error);
+  }
+  console.log("END");
+}
+
+loginFlow();
+
+// console.log("Outside the async function, JavaScript keeps running (non-blocking).");
+// loginUser still returns a Promise.
+// await pauses inside the async function until the promise is resolved or rejected.
+// try...catch is used to handle errors, just like .then().catch().
+// Outside the async function, JavaScript keeps running (non-blocking).
